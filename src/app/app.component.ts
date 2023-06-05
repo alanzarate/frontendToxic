@@ -33,6 +33,7 @@ export class AppComponent implements OnInit{
     const url = 'http://161.35.97.105:9802/comment';
     const body = { content: this.message };
 
+    console.log("eviando", body);
     this.http.post(url, body).subscribe(
       (res) => {
         this.response = res;
