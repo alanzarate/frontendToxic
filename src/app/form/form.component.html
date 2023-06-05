@@ -1,0 +1,93 @@
+<form (submit)="onSubmit()">
+  <label>
+    Mensaje:
+    <input type="text" formControlMssg="message" name="message">
+  </label>
+  <button type="submit">Enviar</button>
+</form>
+<div *ngIf="response">
+  Respuesta: {{ response | json }}
+</div>
+<!-- Section: Design Block -->
+<section class="background-radial-gradient overflow-hidden">
+  <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+    <div class="row gx-lg-5 align-items-center mb-5">
+      <div class="col-lg-12 mb-5 mb-lg-0" style="z-index: 10">
+        <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+          SISTEMAS INTELIGENTES<br />
+          <span style="color: hsl(218, 81%, 75%)">MODELO DE DETECCIÓN DE COMENTARIOS TÓXICOS</span>
+        </h1>
+
+      </div>
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-5 px-md-5">
+            <form>
+              <h4>ENTRADA DEL CONTENIDO</h4>
+              <label class="form-label">INGRESE EL CONTENIDO</label>
+              <div class="form-outline mb-4">
+                <textarea class="form-control" cols="60" rows="10"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                ENVIAR
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+
+        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-5 px-md-5">
+            <form>
+
+              <h4>INFORMACIÓN SOBRE LOS MODELOS</h4>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example4">MODELO 1</label>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+                </div>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example4">MODELO 2</label>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+                </div>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example4">MODELO 3</label>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar bg-info" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+                </div>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example4">MODELO 4</label>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+                </div>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example4">MODELO 5</label>
+                <div class="progress" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
